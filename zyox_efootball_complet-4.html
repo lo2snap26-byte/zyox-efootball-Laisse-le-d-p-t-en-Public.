@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ZYOX eFootball</title>
+<style>
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:#05090f;color:#f4f8ff;font-family:Arial,sans-serif}
+header{position:sticky;top:0;z-index:20;background:#070c14ee;backdrop-filter:blur(14px);border-bottom:1px solid #1b293a;padding:13px 18px;display:flex;align-items:center;justify-content:space-between}.logo{font-weight:900;font-size:20px}.logo b{color:#20dfa1}.status{font-size:10px;color:#59eeb9;border:1px solid #1b7458;border-radius:99px;padding:6px 9px}
+nav{display:flex;gap:6px;overflow:auto;padding:10px 18px;background:#080e17;border-bottom:1px solid #172334}nav button{white-space:nowrap;background:#111a28;color:#aebbd0;border:1px solid #213047;border-radius:9px;padding:8px 11px}
+main{max-width:1100px;margin:auto}.hero{margin:18px;border-radius:22px;padding:26px;background:linear-gradient(135deg,#061b2c,#073e30);border:1px solid #1b6962}.hero .k{color:#50edb4;font-size:11px;font-weight:bold}.hero h1{font-size:34px;margin:9px 0}.hero p{color:#b6c3d3;line-height:1.5;max-width:720px}.btn{background:#20dda1;color:#04120d;border:0;border-radius:9px;padding:11px 15px;font-weight:900;cursor:pointer}
+section{padding:0 18px 25px}.head{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}.head h2{font-size:19px;margin:0}.head span{font-size:11px;color:#708097}.news{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}.item,.panel{background:#0c131e;border:1px solid #1b293b;border-radius:15px;padding:15px}.date{font-size:10px;color:#50e5ae;font-weight:bold}.item h3{margin:8px 0;font-size:16px}.item p{font-size:13px;color:#9baabd;line-height:1.45}.tag{display:inline-block;margin-top:7px;background:#152235;color:#9eb0c7;padding:5px 7px;border-radius:6px;font-size:9px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.card{background:#0c131e;border:1px solid #1b293b;border-radius:15px;padding:13px}.pos{font-size:10px;color:#718199}.rating{font-size:27px;color:#4be2ad;font-weight:900;margin-top:7px}
+.events{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.event{padding:17px;border-radius:15px;background:#0c131e;border:1px solid #1b293b}.icon{font-size:26px}.event h3{font-size:15px}.event p{font-size:12px;color:#8998ab;line-height:1.4}
+table{width:100%;border-collapse:collapse;background:#0c131e;border:1px solid #1b293b;border-radius:15px;overflow:hidden;font-size:13px}th,td{padding:12px;border-bottom:1px solid #172436;text-align:left}th{font-size:10px;color:#718097;text-transform:uppercase}td:last-child{color:#4be2ad;font-weight:bold;text-align:right}
+footer{text-align:center;color:#526178;font-size:11px;padding:25px}footer a{color:#6b8baa}
+@media(max-width:700px){.news,.events{grid-template-columns:1fr}.cards{grid-template-columns:repeat(2,1fr)}.hero h1{font-size:28px}}
+</style>
+</head>
+<body>
+<header><div class="logo">ZYOX <b>eFOOTBALL</b></div><div class="status">● ACTUALITÉS</div></header>
+<nav><button onclick="go('home')">Accueil</button><button onclick="go('news')">News</button><button onclick="go('players')">Joueurs</button><button onclick="go('events')">Événements</button><button onclick="go('ranking')">Classement</button></nav>
+<main>
+<section id="home"><div class="hero">
+<div class="k">ZYOX • HUB eFOOTBALL • 27 SEPTEMBRE 2026</div>
+<h1>Toute l'actualité eFootball ⚽</h1>
+<p>Un espace fan consacré aux mises à jour, événements, joueurs et informations importantes d'eFootball. Les actualités ci-dessous sont basées sur les informations officielles de KONAMI.</p>
+<button class="btn" onclick="go('news')">Lire les dernières news</button>
+</div></section>
+
+<section id="news"><div class="head"><h2>📰 Dernières actualités</h2><span>Sources officielles</span></div><div class="news">
+<article class="item"><div class="date">24 SEPT. 2026</div><h3>eFootball Kick-Off! : mise à jour v1.2.0</h3><p>La mise à jour ajoute le mode « Leagues », avec une saison complète dans l'une de 25 ligues, domicile/extérieur, fatigue et suspensions.</p><span class="tag">MISE À JOUR</span></article>
+<article class="item"><div class="date">24 SEPT. 2026</div><h3>Données de la saison 2026–2027</h3><p>Les données des ligues de eFootball Kick-Off! ont été actualisées pour le début de la saison 2026–2027.</p><span class="tag">NOUVELLE SAISON</span></article>
+<article class="item"><div class="date">24 SEPT. 2026</div><h3>Gameplay : gardiens, passes et défense</h3><p>KONAMI annonce des ajustements sur les réactions des gardiens, la sélection des cibles de passe et les déplacements défensifs.</p><span class="tag">GAMEPLAY</span></article>
+<article class="item"><div class="date">24 SEPT. 2026</div><h3>Pas de POTW cette semaine</h3><p>Aucun joueur POTW n'est disponible dans la Special Player List pendant la période du 24 au 30 septembre 2026.</p><span class="tag">POTW</span></article>
+<article class="item"><div class="date">24 SEPT. 2026</div><h3>Forme des joueurs</h3><p>Du 24 au 30 septembre, la condition des joueurs est déterminée à partir de l'évaluation Live Update publiée le 17 septembre.</p><span class="tag">LIVE UPDATE</span></article>
+<article class="item"><div class="date">12 AOÛT 2026</div><h3>Saison update v6.0.0</h3><p>La mise à jour de saison 6.0.0 a notamment ajouté de nouvelles animations de gardiens et revu plusieurs déplacements offensifs.</p><span class="tag">VERSION 6.0.0</span></article>
+</div></section>
+
+<section id="players"><div class="head"><h2>⭐ Joueurs</h2><span>Rubrique fan</span></div><div class="cards">
+<div class="card"><span class="pos">CF • ATTAQUANT</span><h3>K. Mbappé</h3><div class="rating">98</div></div>
+<div class="card"><span class="pos">RWF • AILIER</span><h3>L. Messi</h3><div class="rating">99</div></div>
+<div class="card"><span class="pos">LWF • AILIER</span><h3>V. Júnior</h3><div class="rating">97</div></div>
+<div class="card"><span class="pos">CF • ATTAQUANT</span><h3>E. Haaland</h3><div class="rating">98</div></div>
+</div></section>
+
+<section id="events"><div class="head"><h2>🔥 Événements</h2><span>À suivre</span></div><div class="events">
+<div class="event"><div class="icon">🏆</div><h3>Challenges</h3><p>Une rubrique pour suivre les défis et compétitions en cours.</p></div>
+<div class="event"><div class="icon">🎴</div><h3>Special Player Lists</h3><p>Suivi des listes spéciales et des annonces de joueurs.</p></div>
+<div class="event"><div class="icon">🌍</div><h3>World Tour</h3><p>Informations sur les événements et nouveautés du mode.</p></div>
+</div></section>
+
+
+</main>
+<footer>ZYOX eFootball — Fan site non affilié à KONAMI.<br>Les informations officielles sont à vérifier sur <a href="https://www.konami.com/efootball/" target="_blank">le site officiel eFootball</a>.</footer>
+<script>function go(id){document.getElementById(id).scrollIntoView({behavior:'smooth'});}</script>
+</body>
+</html>
